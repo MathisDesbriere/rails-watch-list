@@ -1,0 +1,8 @@
+<h1>New list</h1>
+<div class="container">
+<%= simple_form_for @list do |f| %>
+  <%= f.input :name %>
+  <%= f.association :movies, as: :check_boxes, include_hidden: false %>
+  <%= f.button :submit, class: "btn btn-primary" %>
+<% end %>
+</div>
